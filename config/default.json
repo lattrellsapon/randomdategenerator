@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://lattrelladmin:lattrelladmin@randomdategenerator.d9age.mongodb.net/randomdategenerator?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}

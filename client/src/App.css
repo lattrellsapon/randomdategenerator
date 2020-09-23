@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+.right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mtb-20 {
+  margin: 20px 0;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+/* Fixed-Height */
+.fixed-height {
+}
+
+/* Containers */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.dates-container {
+  /* background: #008080;
+  color: #fcc776; */
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+/* GRIDS */
+.flex-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-wrapper {
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid #008080;
+  padding: 10px;
+  border-radius: 4px;
+}
+.generator-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* NAVBAR */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  background: #008080;
+  color: #fff;
+}
+
+.nav-list ul {
+  list-style-type: none;
+}
+
+.nav-list ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* DATES */
+.buttons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+}
+
+.date-item {
+  background: #183253;
+  color: #ffd34b;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.date-button {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+  color: #fff;
+}
+
+.edit-button {
+  background: #008080;
+}
+
+.edit-button:hover {
+  background: #fff;
+  color: #008080;
+  transition: 0.4s ease-in;
+}
+
+.delete-button {
+  background: #ff0000;
+}
+.delete-button:hover {
+  background: #fff;
+  color: #ff0000;
+  transition: 0.4s ease-in;
+}
+
+/* FORMS */
+.form-wrapper {
+  padding: 10px;
+}
+
+.date-idea,
+.date-description,
+.submit-button {
+  outline: none;
+}
+
+.date-idea,
+.date-description {
+  display: block;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #008080;
+}
+
+.date-idea {
+  width: 50%;
+}
+
+.date-description {
+  width: 80%;
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  padding: 5px 10px;
+  background: #008080;
+  color: #fff;
+  border: 1px solid #008080;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #008000;
+  color: #fff;
+  transition: 0.4s ease-in;
+}
+
+.clear-button {
+  outline: none;
+  padding: 5px 10px;
+  background: #808080;
+  border: 1px solid #808080;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.clear-button:hover {
+  background: #000;
+  transition: 0.4s ease-in;
+}
+
+.generator-button {
+  background: #ff0000;
+  border: 1px solid #ff0000;
+  color: #fff;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.random-date {
+  background: #183253;
+  color: #ffd34b;
+  padding: 8px;
+  border-radius: 4px;
+}
