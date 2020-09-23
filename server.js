@@ -13,11 +13,11 @@ connectDB();
 app.use(express.json({ extender: false }));
 
 // Initial Route
-app.get('/', (req, res) => {
-  res.json({
-    msg: 'Welcome to the Random Generator App API',
-  });
-});
+// app.get('/', (req, res) => {
+//   res.json({
+//     msg: 'Welcome to the Random Generator App API',
+//   });
+// });
 
 // Routes to hit by the client
 app.use('/api/users', require('./routes/users'));
