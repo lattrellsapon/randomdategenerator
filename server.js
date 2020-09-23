@@ -24,6 +24,15 @@ app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/dates', require('./routes/dates'));
 
+// Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+  // Set Statoc Folder
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
 // Port to listen to
 const PORT = process.env.PORT || 8000;
 
