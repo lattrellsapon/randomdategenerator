@@ -6,10 +6,10 @@ export const DateItem = ({ date }) => {
     DateContext
   );
 
-  const { dateName, dateDescription, id } = date;
+  const { dateName, dateDescription, _id } = date;
 
   const onDelete = () => {
-    deleteDate(id);
+    deleteDate(_id);
     clearCurrentDate();
   };
 

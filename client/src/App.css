@@ -55,6 +55,46 @@ body {
   overflow-y: scroll;
 }
 
+.register-form-container {
+  width: 20%;
+  margin: auto;
+  padding: 10px;
+}
+
+.register-form-container input {
+  display: block;
+  outline: none;
+  padding: 5px;
+}
+
+label {
+  float: left;
+}
+
+.register-input {
+  width: 100%;
+}
+
+.register-button {
+  background: #008080;
+  border: 1px solid #008080;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #059142;
+  border: 1px solid #059142;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+
+/* Alerts */
+.alert {
+  color: #ff0000;
+}
+
 /* GRIDS */
 .flex-two {
   display: flex;
