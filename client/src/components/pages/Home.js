@@ -16,7 +16,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className='min-height'>
       <div className='grid-two grid-wrapper'>
         <DatesForm />
         <DateGenerator />

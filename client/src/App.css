@@ -40,6 +40,10 @@ body {
   height: 800px;
 }
 
+.min-height {
+  min-height: 800px;
+}
+
 /* Containers */
 .container {
   width: 80%;
