@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Layout
 import { Navbar } from './components/layout/Navbar';
 import { Alerts } from './components/layout/Alerts';
+import { Footer } from './components/layout/Footer';
 
 // Bring in private route
 import { PrivateRoute } from './components/routing/PrivateRoute';
@@ -35,7 +36,7 @@ function App() {
           <Router>
             <Fragment>
               <Navbar />
-              <div className='fixed-height container'>
+              <div className='container'>
                 <Alerts />
                 <Switch>
                   <PrivateRoute exact path='/' component={Home} />
@@ -44,6 +45,7 @@ function App() {
                   <Route exact path='/login' component={Login} />
                 </Switch>
               </div>
+              <Footer />
             </Fragment>
           </Router>
         </AlertProvider>

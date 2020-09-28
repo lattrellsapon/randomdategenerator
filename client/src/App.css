@@ -37,6 +37,7 @@ body {
 
 /* Fixed-Height */
 .fixed-height {
+  height: 800px;
 }
 
 /* Containers */
@@ -67,7 +68,7 @@ body {
   padding: 5px;
 }
 
-label {
+.left {
   float: left;
 }
 
@@ -262,4 +263,94 @@ label {
   color: #ffd34b;
   padding: 8px;
   border-radius: 4px;
+}
+
+.guest-links {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+}
+
+.guest-links:hover {
+  background: #183253;
+  /* border: 1px solid #183253; */
+  transition: 0.4s ease-in;
+}
+
+.logout-button {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background: #183253;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background: #808080;
+  color: #fff;
+  transition: 0.4s ease-in;
+}
+
+.user-highlight {
+  color: #000;
+}
+
+.lattrellsapon {
+  color: #008080;
+  text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .register-form-container {
+    width: 100%;
+  }
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+  .dates-container {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .register-form-container {
+    width: 60%;
+  }
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+  .dates-container {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .register-form-container {
+    width: 50%;
+  }
+  .grid-two {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dates-container {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .register-form-container {
+    width: 20%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

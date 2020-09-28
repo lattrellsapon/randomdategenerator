@@ -12,11 +12,7 @@ export const Dates = () => {
   }, []);
 
   if (dates !== null && dates.length === 0 && !loading) {
-    return (
-      <div className='text-center'>
-        <p>Please add date ideas.</p>{' '}
-      </div>
-    );
+    return <div className='text-center'>{''}</div>;
   }
 
   return (

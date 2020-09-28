@@ -57,11 +57,11 @@ export const Register = (props) => {
   };
 
   return (
-    <div className='text-center'>
+    <div className='text-center fixed-height'>
       <h1>Account Register</h1>
       <form className='register-form-container' onSubmit={onSubmit}>
         <div className='mtb-20'>
-          <label htmlFor='name'>Name: </label>
+          <label htmlFor='name' className="left">Name: </label>
           <input
             type='text'
             name='name'
@@ -71,7 +71,7 @@ export const Register = (props) => {
           />
         </div>
         <div className='mtb-20'>
-          <label htmlFor='email'>Email Address: </label>
+          <label htmlFor='email' className="left">Email Address: </label>
           <input
             type='email'
             name='email'
@@ -82,7 +82,7 @@ export const Register = (props) => {
         </div>
 
         <div className='mtb-20'>
-          <label htmlFor='password'>Password: </label>
+          <label htmlFor='password' className="left">Password: </label>
           <input
             type='password'
             name='password'
@@ -93,7 +93,7 @@ export const Register = (props) => {
           />
         </div>
         <div className='mtb-20'>
-          <label htmlFor='password2'>Confirm Password: </label>
+          <label htmlFor='password2' className="left">Confirm Password: </label>
           <input
             type='password'
             name='password2'

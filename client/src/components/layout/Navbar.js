@@ -15,9 +15,11 @@ export const Navbar = () => {
 
   const authLinks = (
     <Fragment>
-      <li>Hello {user && user.name}</li>
       <li>
-        <a href='#!' onClick={onLogOut}>
+        Hello <span className='user-highlight'>{user && user.name}</span>
+      </li>
+      <li>
+        <a href='#!' onClick={onLogOut} className='logout-button'>
           Logout
         </a>
       </li>
@@ -27,10 +29,14 @@ export const Navbar = () => {
   const guestLinks = (
     <Fragment>
       <li>
-        <Link to='/register'>Register</Link>
+        <Link to='/register' className='guest-links'>
+          Register
+        </Link>
       </li>
       <li>
-        <Link to='/login'>Log In</Link>
+        <Link to='/login' className='guest-links'>
+          Log In
+        </Link>
       </li>
     </Fragment>
   );

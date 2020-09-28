@@ -63,6 +63,7 @@ export const DatesForm = () => {
             className='date-idea'
             value={dateName}
             onChange={onChange}
+            required
           />
         </div>
         <div className='mtb-20'>
